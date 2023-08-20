@@ -2,11 +2,64 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'kumbh Sans' sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
     background-color: #141414;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 
+.articles{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fetch{
+    background-color: #5674ff;
+    padding: 100px;
+}
+
+.fetch1{
+    background-color: rgb(101, 31, 70);
+    padding: 100px;
+}
+
+.fetch2{
+    background-color: rebeccapurple;
+    padding: 100px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 6vh;
+}
+.serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+    padding-top: 5vh;
+}
+
+
+    .serv-container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        gap: 4%;
+}
 
 .navbar{
     background-color: #141414;
@@ -18,6 +71,7 @@
     top: 0;
     z-index: 999;
     width: 100%;
+    height: 10vh;
 }
 
 .container{
@@ -25,7 +79,7 @@
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -113,7 +167,9 @@
 
 
 
-
+.main{
+    height: 90vh;
+}
 
 
 
@@ -276,12 +332,14 @@
 .main-btn{
     font-size: 2rem;
     margin-top: 20px;
-    padding: 10px ;
-    border-radius: 5px;
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-image:linear-gradient(to top , #b721ff 0% , #21d4fd 70%);
     cursor: pointer;
     position: relative;
     transition: all 0.4s;
+    width: 30vw;
 }
 
 .main-btn a{
@@ -366,20 +424,20 @@
     background-image: linear-gradient(to top , #b721ff 30% , #21d4fd 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
+    margin-bottom: 5vh;
 }
 
 .serv-container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 
    
 }
 
 .serv-card{
-    margin: 2rem;
-    height: 400px;
-    width: 400px;
+
+    height: 300px;
+    width: 100%;
     text-align: center;
     background-image: url(train1.jpg);
     background-size: cover;
@@ -392,9 +450,8 @@
 
 
 .serv-card:nth-child(2){
-    margin: 2rem;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 100%;
     text-align: center;
     background-image: url(train2.jpg);
     background-size: cover;
@@ -403,9 +460,8 @@
     border-radius: 50px;
 }
 .serv-card:nth-child(3){
-    margin: 2rem;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 100%;
     text-align: center;
     background-image: url(train3.jpg);
     background-size: cover;
@@ -416,18 +472,15 @@
 
 .serv h2{
    position: absolute;
-   top: 350px;
-   left: 130px;
+   top: 90%;
+   left: 30%;
+   
 }
 
-.serv p{
-    position: absolute;
-    top: 410px;
-    left: 10px;
-}
 
 .serv button{
-    color: white;
+    color: black;
+    font-weight: bolder;
     padding: 10px 25px;
     border-radius: 10px;
     background: #f77062 ;
@@ -437,24 +490,27 @@
 
 
 .serv-card:hover{
-  transform: scale(1.5) ;
+  width: 200vw;
   padding: 50px;
   transition: 0.3s ease-in;
   z-index: 5;
+  border-radius: 0px;
 }
 
 .serv-card:nth-child(2):hover{
-    transform: scale(1.5) ;
+    width: 200vw;
     padding: 50px;
     transition: 0.3s ease-in;
     z-index: 5;
+    border-radius: 0px;
   }
 
   .serv-card:nth-child(3):hover{
-    transform: scale(1.5) ;
+    width: 200vw;
     padding: 50px;
     transition: 0.3s ease-in;
     z-index: 5;
+    border-radius: 0px;
   }
 
 
@@ -527,6 +583,15 @@
 
 @media screen and (max-width: 950px){
 
+    .navbar{
+        width: 100%;
+        height: 5vh;
+    }
+
+    .main{
+        height: 95vh;
+    }
+
     .footer-container{
         padding-top: 60vh;
         background-color: #141414;
@@ -544,7 +609,7 @@
     }
     .footer-logos{
         display: flex;
-        gap: 30px;
+        gap: 5%;
         margin-top: 50px;
         transition: all 0.5s;
        
@@ -552,29 +617,80 @@
     
     .social-media{
         padding-bottom: 20px;
+        width: 100%;
     }
-}
 
 
 .fetch{
-    margin-bottom: 300px;
     background-color: #5674ff;
     padding: 100px;
 }
 
 .fetch1{
-    margin-bottom: 300px;
     background-color: rgb(101, 31, 70);
     padding: 100px;
 }
 
 .fetch2{
-    margin-bottom: 300px;
     background-color: rebeccapurple;
     padding: 100px;
 }
-.body1{display: flex;
+.body1{
+    width: 100vw;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
+.section2{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+}
+
+.serv-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10vh;
+}
+.serv-card{
+    width: 100%;
+}
+
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 4vh;
+
+    height: 0;
+    position: relative;
+    bottom: 0vh;
+}
+
+p{
+    text-align: center;
+}
+.serv h2 {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+  
+}
+
+.social-media-wrap{
+    width: 100%;
+}
+.serv{
+    width: 100%;
+    margin-bottom: 150%;
+}
+}
+
+

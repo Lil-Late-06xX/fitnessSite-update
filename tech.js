@@ -158,7 +158,7 @@ grab.addEventListener('mouseup' , ()=>{
 
 
 
-
+/*
 
 btndrk.addEventListener('click',()=>{
 
@@ -189,3 +189,5 @@ btndrk.addEventListener('click',()=>{
 
 
 })
+
+*/
