@@ -32,6 +32,12 @@ body{
     padding-top: 5vh;
 }
 
+.serv button a {
+    color: #f77062;
+    text-decoration: none;
+    font-size: larger;
+}
+
 
     .serv-container {
         display: flex;
@@ -423,6 +429,7 @@ body{
     align-items: center;
     height: 120vh;
     padding-top: 5vh;
+    gap: 150px;
     
 }
 
@@ -432,7 +439,6 @@ body{
     background-image: linear-gradient(to top , #b721ff 30% , #21d4fd 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
-    margin-bottom: 5vh;
 }
 
 .serv-container{
@@ -480,8 +486,9 @@ body{
 
 .serv h2{
    position: absolute;
-   top: 90%;
-   left: 30%;
+   top: -15%;
+   left: 10%;
+   
    
 }
 
@@ -491,7 +498,7 @@ body{
     font-weight: bolder;
     padding: 10px 25px;
     border-radius: 10px;
-    background: #f77062 ;
+    background: darkslategray ;
     margin-top: 25px;
     cursor: pointer;
 }
@@ -709,9 +716,9 @@ body{
     width: 100%;
     justify-content: center;
     gap: 4vh;
-    height: 130vh;
+    height: 120vh;
     position: relative;
-    bottom: 0vh;
+    bottom: -15vh;
 }
 
 p{
@@ -719,8 +726,10 @@ p{
 }
 .serv h2 {
     position: absolute;
-    top: 90%;
-    left: 30%;
+    color: #fff;
+    font-size: 1.2rem;
+    top: -15%;
+    left: 40%;
   
 }
 
@@ -743,6 +752,22 @@ p{
 }
 
 
+.serv button {
+    position: relative;
+    top: 75%;
+    font-weight: bolder;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background: darkslategray;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.serv button a {
+    color: #f77062;
+    text-decoration: none;
+    font-size: larger;
+}
 
 
 
