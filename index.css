@@ -13,29 +13,24 @@ body{
 }
 
 
-.articles{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    bottom: 35vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+
 
 .fetch{
-    background-color: #5674ff;
-    padding: 100px;
+    margin: 5px;
+    padding: 10px;
+    
 }
 
 .fetch1{
-    background-color: rgb(101, 31, 70);
-    padding: 100px;
+    
+    margin: 5px;
+    padding: 10px;
 }
 
 .fetch2{
-    background-color: rebeccapurple;
-    padding: 100px;
+    
+    margin: 5px;
+    padding: 10px;
 }
 
 .section2{
@@ -171,6 +166,35 @@ body{
     height: 90vh;
 }
 
+
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 4vh;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 12vh;
+}
+.rvw{
+    display: flex;
+    text-align: justify;
+    width: 80%;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+.reviewhead{
+    font-size: 3rem;
+    background-size: 100%;
+    background-image: linear-gradient(to top , #b721ff 30% , #21d4fd 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5vh;
+}
 
 
 @media screen and (max-width: 850px){
@@ -580,6 +604,42 @@ body{
    
 }
 
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    color: #fff;
+    align-items: center;
+    gap: 1vh;
+}
+.client-name{
+    text-align: center;
+    border-bottom: 0.5px solid #f77062;
+    position: revert;
+}
+
+.client-name::first-letter{
+    text-transform: uppercase;
+    font-size: larger;
+    color: #f77062;
+    font-weight: bolder;
+}
+
+.review-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f77062;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.client-review{
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.5;
+}
 
 @media screen and (max-width: 950px){
 
