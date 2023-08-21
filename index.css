@@ -15,23 +15,7 @@ body{
 
 
 
-.fetch{
-    margin: 5px;
-    padding: 10px;
-    
-}
 
-.fetch1{
-    
-    margin: 5px;
-    padding: 10px;
-}
-
-.fetch2{
-    
-    margin: 5px;
-    padding: 10px;
-}
 
 .section2{
     display: flex;
@@ -173,7 +157,7 @@ body{
     flex-direction: column;
     width: 100%;
     justify-content: flex-end;
-    gap: 4vh;
+    gap: 8vh;
     align-items: center;
     text-align: center;
     position: relative;
@@ -641,7 +625,7 @@ body{
     line-height: 1.5;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 850px){
 
     .navbar{
         width: 100%;
@@ -682,18 +666,15 @@ body{
 
 
 .fetch{
-    background-color: #5674ff;
-    padding: 100px;
+    border-bottom: 1.5px solid white;
 }
 
 .fetch1{
-    background-color: rgb(101, 31, 70);
-    padding: 100px;
+    border-bottom: 1.5px solid white;
 }
 
 .fetch2{
-    background-color: rebeccapurple;
-    padding: 100px;
+    border-bottom: 1.5px solid white;
 }
 .body1{
     width: 100vw;
@@ -722,14 +703,13 @@ body{
 }
 
 
-.articles{
+.articles {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     gap: 4vh;
-
-    height: 0;
+    height: 130vh;
     position: relative;
     bottom: 0vh;
 }
@@ -751,6 +731,30 @@ p{
     width: 100%;
     margin-bottom: 150%;
 }
+
+.rvw{
+    display: flex;
+    flex-direction: column;
+}
+
+.client-review{
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
